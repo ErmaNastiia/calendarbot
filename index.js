@@ -5,8 +5,6 @@ const {
   session,
   HttpError,
   InlineKeyboard,
-  adminBot,
-  api,
 } = require('grammy');
 const { google } = require('googleapis');
 const { OAuth2 } = google.auth;
@@ -18,14 +16,7 @@ const PORT = process.env.PORT || 8080;
 // Initialize the bot
 const bot = new Bot(process.env.BOT_API_KEY);
 
-const calender = process.env.CALENDAR_ID;
-const email = process.env.ADMIN_EMAIL;
-const client = process.env.CLIENT_ID;
-const secret = process.env.CLIENT_SECRET;
-const uri = process.env.REDIRECT_URI;
-const token = process.env.REFRESH_TOKEN;
-const user = process.env.EMAIL_USER;
-const pass = process.env.EMAIL_PASSWORD;
+
 
 const oAuth2Client = new google.auth.OAuth2(
   process.env.CLIENT_ID,
