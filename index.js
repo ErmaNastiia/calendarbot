@@ -400,7 +400,7 @@ bot.on('message', async ctx => {
           await addEventToCalendar(ctx.session);
           await sendTelegramNotification(ctx.session);
           await ctx.reply(
-            'Спасибо, мы свяжемся с вами в течение суток. Если вы не получили от нас ответа, пишите на @dushepolezno_work. Условия <a href="https://yadi.sk/i/vYDfeS16TEy9aQ">бронирования</a>', { parse_mode: 'HTML' }
+            'Спасибо, мы свяжемся с вами в течение суток. Если вы не получили от нас ответа, пишите на @dushepolezno_work. Пока ждёте от нас ответа, ознакомьтесь, пожалуйста, с условиями <a href="https://yadi.sk/i/vYDfeS16TEy9aQ">бронирования</a>', { parse_mode: 'HTML' }
           );
           ctx.session.step = 'idle'; // Reset the conversation
         } catch (error) {
@@ -487,7 +487,7 @@ bot.on('callback_query', async ctx => {
             await addEventToCalendar(ctx.session);
             await sendTelegramNotification(ctx.session);
             await ctx.reply(
-              'Спасибо, мы свяжемся с вами в течение суток. Если вы не получили от нас ответа, пишите на @dushepolezno_work. Условия <a href="https://yadi.sk/i/vYDfeS16TEy9aQ">бронирования</a>', { parse_mode: 'HTML' }
+              'Спасибо, мы свяжемся с вами в течение суток. Если вы не получили от нас ответа, пишите на @dushepolezno_work. Пока ждёте от нас ответа, ознакомьтесь, пожалуйста, с условиями <a href="https://yadi.sk/i/vYDfeS16TEy9aQ">бронирования</a>', { parse_mode: 'HTML' }
             );
             ctx.session.step = 'idle'; // Reset the conversation
           } catch (error) {
@@ -539,7 +539,7 @@ bot.on('callback_query', async ctx => {
               await addEventToCalendar(ctx.session);
               await sendTelegramNotification(ctx.session);
               await ctx.reply(
-                'Спасибо, мы свяжемся с вами в течение суток. Если вы не получили от нас ответа, пишите на @dushepolezno_work. Условия <a href="https://yadi.sk/i/vYDfeS16TEy9aQ">бронирования</a>', { parse_mode: 'HTML' }
+                'Спасибо, мы свяжемся с вами в течение суток. Если вы не получили от нас ответа, пишите на @dushepolezno_work. Пока ждёте от нас ответа, ознакомьтесь, пожалуйста, с условиями <a href="https://yadi.sk/i/vYDfeS16TEy9aQ">бронирования</a>', { parse_mode: 'HTML' }
               );
               ctx.session.step = 'idle'; // Reset the conversation
             } catch (error) {
